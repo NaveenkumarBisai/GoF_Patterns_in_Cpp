@@ -1,0 +1,8 @@
+build/
+*.o
+*.exe
+*.out
+CMakeFiles/
+CMakeCache.txt
+Makefile
+*.DS_Store # macOS specific
