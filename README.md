@@ -22,14 +22,17 @@ They documented 23 design patterns, categorized into:
 ## 📁 Project Structure
 ```
 GoF-Patterns-in-Cpp/
-├── CMakeLists.txt         # Root CMake
-├── README.md              # This file
+├── CMakeLists.txt
+├── README.md
 ├── Creational/
 │   ├── CMakeLists.txt
-│   └── Singleton/
-│       ├── CMakeLists.txt
-│       ├── Singleton.hpp
-│       └── main.cpp
+│   ├── Singleton/
+│   ├── FactoryMethod/
+│   ├── AbstractFactory/
+│   └── Builder/
+├── Behavioral/
+│   ├── CMakeLists.txt
+│   └── Strategy/
 └── build/                 # CMake build folder (not checked in)
 ```
 
@@ -55,11 +58,13 @@ make
 ---
 
 ## ✅ Completed Patterns
-| Category | Pattern |
-|----------|---------|
-| Creational | ✅ Singleton |
-| Creational | 🔜 Factory Method |
-| ... | ... |
+| Category     | Pattern            |
+|--------------|--------------------|
+| Creational   | ✅ Singleton        |
+| Creational   | ✅ Factory Method   |
+| Creational   | ✅ Abstract Factory |
+| Creational   | ✅ Builder          |
+| Behavioral   | ✅ Strategy         |
 
 ---
 
