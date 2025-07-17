@@ -1,28 +1,34 @@
 #pragma once
 #include "Subject.hpp"
 #include "Observer.hpp"
-#include <algorithm>
+#include <iostream>
 #include <vector>
+#include <algorithm>
 
 class CameraSystem : public Subject {
 private:
-    std::vector<Observer*> observers;
-    // Camera-specific data and methods
+    std::vector<std::shared_ptr<Observer>> observers;
+
 public:
-    void attach(Observer* observer) override {
+    void attach(std::shared_ptr<Observer> observer) override {
         observers.push_back(observer);
     }
-    void detach(Observer* observer) override {
+
+    void detach(std::shared_ptr<Observer> observer) override {
         observers.erase(std::remove(observers.begin(), observers.end(), observer), observers.end());
     }
-    void notify() override {
-        for (Observer* observer : observers) {
-            observer->update(this);
+
+    void notify(const std::string& message) override {
+        for (const auto& observer : observers) {
+            if (observer)
+                observer->update(message);
         }
     }
-    // Additional methods specific to CameraSystem
+
+    // Simulate camera event
     void captureImage() {
-        // Logic to capture an image
-        notify(); // Notify observers after capturing an image
+        std::string image = "Frame_" + std::to_string(rand() % 100);
+        std::cout << "[Camera] Captured " << image << std::endl;
+        notify(image);
     }
 };
