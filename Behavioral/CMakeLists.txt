@@ -1,1 +1,2 @@
 add_subdirectory(Strategy)
+add_subdirectory(Observer)
