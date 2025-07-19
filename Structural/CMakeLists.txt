@@ -1,1 +1,2 @@
 add_subdirectory(Decorator)
+add_subdirectory(Adapter)
