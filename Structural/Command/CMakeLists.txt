@@ -1,0 +1,1 @@
+add_executable(CommandDemo main.cpp TurnOnCommand.hpp TurnOffCommand.hpp Light.hpp Command.hpp RemoteControl.hpp)
