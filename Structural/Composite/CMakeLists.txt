@@ -1,0 +1,1 @@
+add_executable(CompositeExample main.cpp Graphic.hpp Group.hpp Circle.hpp Square.hpp)
