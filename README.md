@@ -30,9 +30,19 @@ GoF-Patterns-in-Cpp/
 │   ├── FactoryMethod/
 │   ├── AbstractFactory/
 │   └── Builder/
+├── Structural/
+│   ├── CMakeLists.txt
+│   ├── Adapter/
+│   ├── Composite/
+│   ├── Decorator/
+│   └── Proxy/
 ├── Behavioral/
 │   ├── CMakeLists.txt
-│   └── Strategy/
+│   ├── Strategy/
+│   ├── Observer/
+│   ├── Command/
+│   ├── TemplateMethod/
+│   └── State/
 └── build/                 # CMake build folder (not checked in)
 ```
 
@@ -64,7 +74,15 @@ make
 | Creational   | ✅ Factory Method   |
 | Creational   | ✅ Abstract Factory |
 | Creational   | ✅ Builder          |
+| Structural   | ✅ Adapter          |
+| Structural   | ✅ Composite        |
+| Structural   | ✅ Decorator        |
+| Structural   | ✅ Proxy            |
 | Behavioral   | ✅ Strategy         |
+| Behavioral   | ✅ Observer         |
+| Behavioral   | ✅ Command          |
+| Behavioral   | ✅ Template Method  |
+| Behavioral   | ✅ State            |
 
 ---
 
