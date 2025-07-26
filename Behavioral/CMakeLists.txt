@@ -1,2 +1,5 @@
 add_subdirectory(Strategy)
 add_subdirectory(Observer)
+add_subdirectory(Command)
+add_subdirectory(Template)
+add_subdirectory(StatePattern)

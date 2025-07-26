@@ -1,7 +1,4 @@
 add_subdirectory(Decorator)
 add_subdirectory(Adapter)
-add_subdirectory(Command)
 add_subdirectory(Composite)
 add_subdirectory(Proxy)
-add_subdirectory(Template)
-add_subdirectory(StatePattern)
